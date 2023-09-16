@@ -10,7 +10,7 @@ def medications(file_path):
     return result_dict
 
 # Example usage
-file_path = 'codes/medications.txt'  
+file_path = 'medications.txt'  
 result_dict = medications(file_path)
 print(result_dict)
 

@@ -19,7 +19,7 @@ def diagnostics_codes(file_path):
     return result_dict
 
 # Example usage
-file_path = 'codes/diagnostic_codes.txt'  
+file_path = 'diagnostic_codes.txt'  
 result_dict = diagnostics_codes(file_path)
 print(result_dict)
 
