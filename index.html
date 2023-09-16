@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Form</title>
+    <title>Start New Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Input Form</h1>
-    <form action="/submit" method="post">
-        <label for="user_input">Enter text:</label><br>
-        <input type="text" id="user_input" name="user_input"><br>
-        <input type="submit" value="Submit">
-    </form>
-<div id="main-content">
-    <h1>Do you have a diagnosis? Convert that to the diagnosis code!</h1>
-    <h1>
-      <form class="userinput" method="POST">
-        <input type="text" name = "disease" placeholder="Salmonella arthritis" required>
-        <input type="submit">
-    </form>
-    </h1>
-  </div>
-  <body>
-    <h1>Do you have a medication? Convert that to the medication code!</h1>
-    <h1>
-      <form class="userinput" method="POST">
-        <input type="text" name = "disease" placeholder="Salmonella arthritis" required>
-        <input type="submit">
-    </form>
-    </h1>
-  </body>
+    <button onclick="redirectToNewForm()">Start New Form</button>
+
+    <script>
+        function redirectToNewForm() {
+            window.location.href = "page_1.html";
+        }
+    </script>
 </body>
 </html>
