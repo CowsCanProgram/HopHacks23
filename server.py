@@ -31,13 +31,11 @@ oauth.register(
 
 
 # Controllers API
+# 👆 We're continuing from the steps above. Append this to your server.py file.
+
 @app.route("/")
 def home():
-    return render_template(
-        "home.html",
-        session=session.get("user"),
-        pretty=json.dumps(session.get("user"), indent=4),
-    )
+    return render_template("home.html", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 @app.route("/callback", methods=["GET", "POST"])
